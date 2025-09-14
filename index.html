@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EnergySense Appliances</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <!-- Top Navigation -->
+  <header class="site-header">
+    <a class="brand" href="#" data-route="home" aria-label="Go to Home">
+      <img src="assets/power-logo.svg" alt="Power logo" class="brand__logo" />
+      <span class="brand__text">EnergySense</span>
+    </a>
+    <nav class="topnav" aria-label="Primary">
+      <button class="topnav__link" data-route="home" aria-current="page">Home</button>
+      <button class="topnav__link" data-route="televisions">Televisions</button>
+      <button class="topnav__link" data-route="about">About Us</button>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="app" tabindex="-1">
+    <!-- Home -->
+    <section id="page-home" class="page is-active" role="region" aria-labelledby="home-title">
+      <h1 id="home-title">Cutting Energy Use at Home</h1>
+      <p>
+        In Australia, appliance energy consumption can account for a sizable share of household electricity use.
+        Look for the <strong>Energy Rating Label</strong> (stars + kWh per year) to compare products.
+      </p>
+      <div class="card-grid">
+        <article class="card">
+          <h2>Quick wins</h2>
+          <ul>
+            <li>Choose <em>high star-rating</em> models (lower annual kWh).</li>
+            <li>Enable <em>eco</em> and <em>auto standby</em> modes on TVs and set-top boxes.</li>
+            <li>Use smart power boards to reduce idle/standby draw.</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h2>Typical appliance shares</h2>
+          <p class="muted">Illustrative placeholder split for a modern home:</p>
+          <ul>
+            <li>Heating/Cooling: ~35–45%</li>
+            <li>Hot Water: ~20–30%</li>
+            <li>Refrigeration: ~6–10%</li>
+            <li>Electronics/TVs/IT: ~5–10%</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Televisions -->
+    <section id="page-televisions" class="page" role="region" aria-labelledby="tv-title">
+      <h1 id="tv-title">Televisions: Energy & Picture</h1>
+      <p>
+        TVs vary widely in energy use. Panel type (OLED, QLED/Mini-LED, LCD), size, brightness settings, and
+        features (HDR, high refresh rate) all impact consumption.
+      </p>
+
+      <div class="table-wrap">
+        <table>
+          <caption>Placeholder comparison — annual energy (illustrative)</caption>
+          <thead>
+            <tr>
+              <th scope="col">Size</th>
+              <th scope="col">Panel</th>
+              <th scope="col">Typical Mode</th>
+              <th scope="col">Annual Energy (kWh/yr)</th>
+              <th scope="col">Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>50"</td>
+              <td>LED (LCD)</td>
+              <td>Eco</td>
+              <td>90–120</td>
+              <td>Lower brightness; good for lit rooms</td>
+            </tr>
+            <tr>
+              <td>55"</td>
+              <td>OLED</td>
+              <td>Filmmaker</td>
+              <td>100–140</td>
+              <td>Excellent blacks; varies with APL</td>
+            </tr>
+            <tr>
+              <td>65"</td>
+              <td>Mini-LED (LCD)</td>
+              <td>Standard</td>
+              <td>130–180</td>
+              <td>Very bright; HDR raises draw</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Tips to cut TV energy</h2>
+      <ul>
+        <li>Turn on <strong>Ambient Light</strong> / <strong>Eco</strong> modes.</li>
+        <li>Reduce <strong>Backlight / OLED Light</strong> for night viewing.</li>
+        <li>Enable <strong>auto power-down</strong> after inactivity.</li>
+        <li>Consider screen size vs. seating distance (don’t oversize).</li>
+      </ul>
+    </section>
+
+    <!-- About Us -->
+    <section id="page-about" class="page" role="region" aria-labelledby="about-title">
+      <h1 id="about-title">About Us</h1>
+      <p>
+        We help Australian households understand appliance energy consumption and make smarter, greener choices.
+        This demo site is for coursework and showcases a simple three-page SPA with accessible navigation.
+      </p>
+
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:hello@energysense.example">hello@energysense.example</a></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>
+      <span id="year"></span> • <span id="your-name">Faiq</span> •
+      Built for learning.
+      <span class="ack">
+        This site includes code/content generated with the assistance of GenAI.
+      </span>
+    </p>
+  </footer>
+  <script>
+    // Update year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
